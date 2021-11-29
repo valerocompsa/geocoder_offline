@@ -5,6 +5,8 @@ import 'package:geocoder_offline/geocoder_offline.dart';
 import 'package:geocoder_offline/src/SearchData.dart';
 import 'package:kdtree/kdtree.dart';
 
+import 'package:seroilenergy/ui/globals.dart' as globals;
+
 import 'LocationData.dart';
 
 class GeocodeData {
@@ -102,6 +104,8 @@ class GeocodeData {
         .map((model) => model.toJson())
         .toList();
 
+    globals.posicionsEspanya = locations;
+    
     _kdTree = KDTree(locations, _distance, ['latitude', 'longitude']);
   }
 
