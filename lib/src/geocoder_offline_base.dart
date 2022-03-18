@@ -5,7 +5,7 @@ import 'package:geocoder_offline/geocoder_offline.dart';
 import 'package:geocoder_offline/src/SearchData.dart';
 import 'package:kdtree/kdtree.dart';
 
-import 'package:seroilenergy/ui/globals.dart' as globals;
+import 'package:seroilenergy/globals.dart' as globals;
 
 import 'LocationData.dart';
 
